@@ -37,7 +37,7 @@ private:
 public:
     //Piece(int x,int y,char c,int p,int d);
     Piece(int x,int y,char c,string p);
-    Piece();
+    //Piece();
     int getx();
     int gety();
     char getc();
@@ -67,6 +67,7 @@ Piece::Piece(int x,int y,char c,string n)
     pieceNumber=n;
 }
 
+/*
 Piece::Piece()
 {
     xpos=0;
@@ -79,6 +80,7 @@ Piece::Piece()
     goalx=5;
     goaly=5;
 }
+ */
 
 int Piece::getx()
 {
