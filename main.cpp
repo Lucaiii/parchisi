@@ -12,7 +12,14 @@ using namespace std;
 COORD coord = { 0,0 }; // this is global variable
 //center of axis is set to the top left corner of the screen
 
-
+/*
+void gotoxy(int x, int y)
+{
+    coord.X = x;
+    coord.Y = y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+*/
 
 
 class Piece
@@ -107,7 +114,7 @@ void Piece::sety(int y)
 void Piece::pieceDisplay()
 {
     coord.X=6*xpos+3;
-    coord.Y=3*ypos+2
+    coord.Y=3*ypos+2;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
     cout<<colour<<pieceNumber<<endl;
 }
