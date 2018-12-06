@@ -225,9 +225,9 @@ void GOAL1(Piece Piece1)
             Piece1.pieceDisplay();
             gotoxy(0,33);
             cout<<"you rolled a "<<theroll<<endl;
-            int sendToY=Piece1.gety()+theroll;
+            int sendToY=Piece1.getx()+theroll;
             cout<<"the value that will be sent to y is "<<sendToY<<endl;
-            Piece1.sety(sendToY);
+            Piece1.setx(sendToX);
             cout<<"press any key to display the board"<<endl;
             system("pause");
             genboardstart1(Piece1);
@@ -242,7 +242,7 @@ void GOAL1(Piece Piece1)
 ///INT MAIN
 int main()
 {
-    Piece Piece1(1,1,'y',"1");
+    Piece Piece1(2,2,'y',"1");
     //srand(time(NULL));
     int i=0;
     
