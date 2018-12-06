@@ -240,7 +240,7 @@ void GOAL1(Piece Piece1)
 ///INT MAIN
 int main()
 {
-    Piece Piece1(5,5,'y',"1");
+    Piece Piece1(1,1,'y',"1");
     //srand(time(NULL));
     int i=0;
     
