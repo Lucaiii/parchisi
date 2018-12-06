@@ -228,6 +228,7 @@ void GOAL1(Piece Piece1)
             cout<<"press any key to display the board"<<endl;
             system("pause");
             genboardstart1(Piece1);
+            Piece1.pieceDisplay();
             gotoxy(0,33);
             cout<<"DONE"<<endl;
         }
