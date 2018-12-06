@@ -113,9 +113,7 @@ void Piece::sety(int y)
 
 void Piece::pieceDisplay()
 {
-    coord.X=6*xpos+3;
-    coord.Y=3*ypos+2;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+    gotoxy(xpos*5,ypos*3);
     cout<<colour<<pieceNumber<<endl;
 }
 
@@ -173,31 +171,31 @@ int genboardstart1(Piece Piece1)
     cout << "|XXXXX|XXXXX|XXXXX|XXXXX|XXXXX|     |     |XXXXX|XXXXX|" << endl;
     cout << "|XXXXX|XXXXX|XXXXX|XXXXX|XXXXX| b1  | b2  |XXXXX|XXXXX| 1" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|XXXXX|     |     |     |     |  BS |     |     |XXXXX|" << endl;
+    cout << "|XXXXX|     |     |     |     |BluSt|     |     |XXXXX|" << endl;
     cout << "|XXXXX|     |     |     |     |     |     |     |XXXXX| 2" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|     |     |XXXXX|XXXXX|XXXXX|XXXXX|XXXXX|     |XXXXX|" << endl;
-    cout << "| r2  |     |XXXXX|XXXXX|XXXXX|XXXXX|XXXXX|     |XXXXX| 3" << endl;
+    cout << "|     |RedSt|XXXXX|XXXXX|     |XXXXX|XXXXX|     |XXXXX|" << endl;
+    cout << "| r2  |     |XXXXX|XXXXX|     |XXXXX|XXXXX|     |XXXXX| 3" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|     |     |     |     |     |     |     |     |XXXXX|" << endl;
-    cout << "| r1  |     |     |     |     |     |     |     |XXXXX| 4" << endl;
+    cout << "|     |     |XXXXX|XXXXX|     |XXXXX|XXXXX|     |XXXXX|" << endl;
+    cout << "| r1  |     |XXXXX|XXXXX|     |XXXXX|XXXXX|     |XXXXX| 4" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|XXXXX|     |     |     |     |     |     |     |XXXXX|" << endl;
+    cout << "|XXXXX|     |     |     |GOAL |     |     |     |XXXXX|" << endl;
     cout << "|XXXXX|     |     |     |     |     |     |     |XXXXX| 5" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|XXXXX|     |     |     |     |     |     |     |     |" << endl;
-    cout << "|XXXXX|     |     |     |     |     |     |     |  g1 | 6" << endl;
+    cout << "|XXXXX|     |XXXXX|XXXXX|     |XXXXX|XXXXX|GrnSt|     |" << endl;
+    cout << "|XXXXX|     |XXXXX|XXXXX|     |XXXXX|XXXXX|     |  g1 | 6" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|XXXXX|     |     |     |     |     |     |     |     |" << endl;
-    cout << "|XXXXX|     |     |     |     |     |     |     |  g2 | 7" << endl;
+    cout << "|XXXXX|     |XXXXX|XXXXX|     |XXXXX|XXXXX|     |     |" << endl;
+    cout << "|XXXXX|     |XXXXX|XXXXX|     |XXXXX|XXXXX|     |  g2 | 7" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "|XXXXX|     |     |     |     |     |     |     |XXXXX|" << endl;
+    cout << "|XXXXX|     |     |YllSt|     |     |     |     |XXXXX|" << endl;
     cout << "|XXXXX|     |     |     |     |     |     |     |XXXXX| 8" << endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
     cout << "|XXXXX|XXXXX|     |     |XXXXX|XXXXX|XXXXX|XXXXX|XXXXX|" << endl;
     cout << "|XXXXX|XXXXX| y2  | y1  |XXXXX|XXXXX|XXXXX|XXXXX|XXXXX| 9" <<endl;
     cout << "|_____|_____|_____|_____|_____|_____|_____|_____|_____|" << endl;
-    cout << "   1     2     3     4     5     6     7     8     9     9     10";
+    cout << "   1     2     3     4     5     6     7     8     9   ";
     cout<<endl<<endl;
     
     /*
