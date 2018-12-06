@@ -224,6 +224,7 @@ void GOAL1(Piece Piece1)
             gotoxy(0,33);
             cout<<"you rolled a "<<theroll<<endl;
             int sendToY=Piece1.gety()+theroll;
+            cout<<"the value that will be sent to y is "<<sendToY<<endl;
             Piece1.sety(sendToY);
             cout<<"press any key to display the board"<<endl;
             system("pause");
