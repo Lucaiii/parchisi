@@ -115,7 +115,7 @@ void Piece::sety(int y)
 
 void Piece::pieceDisplay()
 {
-    gotoxy(xpos*5,ypos*3);
+    gotoxy((xpos*6)-2,ypos*3);
     cout<<colour<<pieceNumber<<endl;
 }
 
@@ -225,8 +225,8 @@ void GOAL1(Piece Piece1)
             Piece1.pieceDisplay();
             gotoxy(0,33);
             cout<<"you rolled a "<<theroll<<endl;
-            int sendToY=Piece1.getx()+theroll;
-            cout<<"the value that will be sent to y is "<<sendToY<<endl;
+            int sendToX=Piece1.getx()+theroll;
+            //cout<<"the value that will be sent to x is "<<sendToX<<endl;
             Piece1.setx(sendToX);
             cout<<"press any key to display the board"<<endl;
             system("pause");
